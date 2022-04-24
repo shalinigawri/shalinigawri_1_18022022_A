@@ -1,0 +1,110 @@
+$timingFunction: ease-in-out;
+$animation: slide 300ms  ease-in-out forwards;
+
+@mixin transform($property){
+    transform:$property;
+}
+
+.menu_click:hover .fa-circle-check {
+
+    @include transform( rotate(360deg));
+    transition-timing-function: $timingFunction;
+    transition: 4s;
+
+
+}
+.menu_click:hover .item-checked {
+    visibility: visible;
+    background-color: #99E2D0;
+
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    transform: translate(-10px, 0px);
+    overflow: hidden;
+    height: auto;
+    transition-duration: 2s;
+    transition-timing-function: $timingFunction;
+}
+.menu-items:nth-child(1) {
+    transform-origin: top center;
+  
+    animation: $animation;
+    animation-delay: 500ms;
+}
+
+.menu-items:nth-child(2) {
+    transform-origin: top center;
+    animation: $animation;
+    animation-delay: 1000ms;
+    
+}
+
+.menu-items:nth-child(3) {
+    transform-origin: top center;
+    animation: $animation;
+    animation-delay: 1500ms;
+   
+}
+
+.menu-items:nth-child(5) {
+    transform-origin: top center;
+    animation: $animation;
+    animation-delay: 200ms;
+   
+}
+
+.menu-items:nth-child(6) {
+    transform-origin: top center;
+    animation: $animation;
+    animation-delay: 2500ms;
+    
+}
+
+.menu-items:nth-child(7) {
+    transform-origin: top center;
+    animation: $animation;
+    animation-delay: 3000ms;
+    
+}
+
+.menu-items:nth-child(9) {
+    transform-origin: top center;
+    animation: $animation;
+    animation-delay: 3500ms;
+}
+
+.menu-items:nth-child(10) {
+    transform-origin: top center;
+    animation: $animation;
+    animation-delay:4000ms;
+    
+}
+
+.menu-items:nth-child(11) {
+    transform-origin: top center;
+    animation: $animation;
+    animation-delay: 4500ms;
+    
+}
+
+.menu-items:nth-child(11) {
+    transform-origin: top center;
+    animation: $animation;
+    animation-delay: 5000ms;
+    
+}
+
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

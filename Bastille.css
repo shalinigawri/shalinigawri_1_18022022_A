@@ -1,0 +1,189 @@
+body {
+    align-items: center;
+    font-family: 'Raleway';
+    font-size: 20px;
+    margin-left: 0px;
+
+}
+
+.Header {
+    display: flex;
+}
+
+.Headercol1 {
+    flex: 0 0 25px;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.resturant {
+    padding-left: 5px;
+    display: flex;
+    flex-flow: row;
+}
+
+.Resturant-col1 {
+    flex: 1;
+}
+
+.Resturant-col2 {
+    flex: 0 0 15px;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.Headercol2 {
+    max-width: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.underline {
+    border-bottom: 3px solid #99E2D0;
+    padding: 5px;
+}
+
+.Resturant_Items_image {
+    border-radius: 15px;
+    border-bottom: 1px solid #F2F2F2;
+
+    background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px 15px 0 0;
+
+    width: 100%;
+    height: 300px;
+}
+
+.Menu p {
+    margin-left: 10px;
+}
+
+.Menu {
+
+    background-color: #F2F2F2;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: 5px;
+    position: absolute;
+    top: 220px;
+    width: 98%;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: white;
+
+}
+
+
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: white;
+
+}
+
+.item-name {
+    flex-basis: 80%;
+
+}
+
+.item-Price {
+    flex-basis: 25%;
+    align-items: stretch;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.item-checked {
+    text-align: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    cursor: pointer;
+    right: 0px;
+
+    visibility: hidden;
+
+
+}
+
+.menu_click {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+
+
+}
+
+
+
+
+
+
+button {
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    margin: 20%;
+    height: 50px;
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+    border: 0px;
+
+}
+
+
+footer {
+    font-family: 'Raleway';
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font: medium;
+
+}
+
+ul li {
+    list-style: none;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .Resturant_Items_image{
+        height: 200px;
+        width:800px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .Resturant_Items_image{
+        height: 200px;
+        width:1200px;
+        width:100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .Resturant_Items_image{
+        height: 200px;
+        width:1200px;
+        width:100%;
+    }
+}

@@ -1,0 +1,294 @@
+header {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    align-items: center;
+    /* font-family: 'Raleway'; */
+    font-size: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+.search_location {
+    background-color: #F2F2F2;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 0px;
+}
+
+form h4 {
+    background-color: gray;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+button {
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+}
+
+.selectitems {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 3px 10px 10px 3px !important;
+}
+
+.items {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    padding-left: 20px;
+}
+
+li {
+    padding-left: 10px;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    background-color: #9356DC;
+    top: 15px;
+    right: 20px;
+}
+
+.selectitems:hover {
+    background-color: rgba(94, 62, 133, .6);
+}
+
+.Resturant {
+    background: lightgray;
+    padding: 5px 0;
+    border-radius: 20px;
+    
+   
+
+}
+.resturantImage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Resturant h2 {
+    padding: 0px 0 0 10px;
+}
+
+.Resturant_Items {
+
+    border-radius: 15px;
+    background-color: white;
+    margin: 10px;
+}
+
+.container {
+
+    width: 100%;
+     height:200px;
+     position: relative; 
+ 
+     background-image:url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg); 
+     background-size:cover ;
+     background-repeat: no-repeat;
+     background-position: center center;
+     border-radius: 15px 15px 0 0;
+ }
+ 
+ .container2 {
+ 
+     width: 100%;
+      height:200px;
+      position: relative; 
+  
+      background-image:url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg); 
+      background-size:cover ;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 15px 15px 0 0;
+  }
+ 
+  .container3 {
+ 
+     width: 100%;
+      height:200px;
+      /* position: relative;*/ 
+  
+      background-image:url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg); 
+      background-size:cover ;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 15px 15px 0 0;
+  }
+ 
+  .container4 {
+ 
+     width: 100%;
+      height:200px;
+      position: relative; 
+  
+      background-image:url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg); 
+      background-size:cover ;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 15px 15px 0 0;
+  }
+ 
+
+
+.tag {
+    float: right;
+    position: absolute;
+    left: 254px;
+    top: 15px;
+    background-color: #99E2D0;
+    color: green;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+}
+
+.Resturant_Items_image {
+    border-radius: 15px 15px 0px 0px;
+    max-width: 100%;
+    width:400px;
+    height: 230px;
+
+}
+ 
+.container > Resturant_Items_image {
+   
+
+    object-fit: cover;
+}
+
+.Resturant_caption {
+    display: flex;
+    flex-flow: row;
+    column-gap: 20px;
+
+}
+
+.Resturant_caption_col1 {
+    flex: 1;
+    padding-left: 5px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.Resturant_caption_col2a {
+    flex: 0 0 50px;
+    justify-content: flex-end;
+    padding-top: 10px;
+    cursor: pointer;
+
+
+}
+
+.Resturant_caption_col2b {
+    display: none;
+}
+
+.Resturant_caption_col2a:hover {
+    display: none;
+}
+
+.Resturant_caption_col2a:hover+.Resturant_caption_col2b {
+    display: inline;
+    color: #9356DC;
+    cursor: pointer;
+    
+    flex: 0 0 50px;
+    padding-top: 10px;
+
+}
+
+
+footer {
+    font-family: 'Raleway';
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font: medium;
+}
+
+ul li {
+    list-style: none;
+}
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .resturantImage{
+        display:grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto auto; 
+  
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .resturantImage{
+        display:grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto auto; 
+  
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .resturantImage{
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+  
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .resturantImage{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .resturantImage{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+a{
+    text-decoration: none;
+    color:black;
+}
